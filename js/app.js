@@ -7,11 +7,11 @@ function Shirt(name, size, color, stock, image){
 }
 
 var tshirtOne   = new Shirt('Nike Sphere Element', 'XXL', 'Blue', 14, 'images/1.png')
-var tshirtTwo   = new Shirt('Nike Pro HyperWarm', 'M', 'Dark Blue', 23, 'images/2.png')
-var tshirtThree = new Shirt('Nike Therma Sphere Element', 'S', 'Blue', 14, 'images/3.png')
-var tshirtFour  = new Shirt('Nike Dry', 'XL', 'Blue', 14, 'images/4.png')
-var tshirtFive  = new Shirt('Nike Air', 'XL', 'Blue', 14, 'images/5.png')
-var tshirtSex  = new Shirt('Jordan AJ Long-Sleeve', 'XL', 'Blue', 14, 'images/6.png')
+var tshirtTwo   = new Shirt('Nike Pro HyperWarm', 'M', 'Red', 23, 'images/2.png')
+var tshirtThree = new Shirt('Nike Therma Sphere Element', 'S', 'Grey', 14, 'images/3.png')
+var tshirtFour  = new Shirt('Nike Dry', 'XL', 'Green', 14, 'images/4.png')
+var tshirtFive  = new Shirt('Nike Air', 'XL', 'Red', 14, 'images/5.png')
+var tshirtSex  = new Shirt('Jordan AJ Long-Sleeve', 'XL', 'Orange', 14, 'images/6.png')
 
 var tshirtArray = new Array
 
@@ -19,7 +19,7 @@ tshirtArray.push(tshirtOne, tshirtTwo, tshirtThree, tshirtFour, tshirtFive, tshi
 
 for(var i = 0; i < tshirtArray.length; i++){
   var tName = document.createTextNode(tshirtArray[i].name)
-  var tSizeStock = document.createTextNode("Size: " + tshirtArray[i].size + " " + " Stock: " + tshirtArray[i].stock)
+  var tSizeStock = document.createTextNode("Size: " + tshirtArray[i].size + " " + " - Stock: " + tshirtArray[i].stock)
   var tColor = document.createTextNode(tshirtArray[i].color)
   var tButton = document.createTextNode("Buy Now!")
   var tImage = tshirtArray[i].image

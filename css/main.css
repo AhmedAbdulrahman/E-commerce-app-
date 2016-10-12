@@ -60,6 +60,7 @@ Items
   -ms-flex: auto;
   flex: auto;
   align-items: center;
+  text-align: center;
 }
 .item.blue{
   background: linear-gradient(-45deg, #92DCE5 50%, rgba(255, 255, 255, 0.5) 50%);

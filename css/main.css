@@ -1,0 +1,121 @@
+/*--------------------
+Body
+---------------------*/
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+}
+
+body {
+  background: #EEE5E9;
+}
+.wrapper {
+  width: 960px;
+}
+
+/*--------------------
+Items
+---------------------*/
+.row{
+  width: 100%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.items {
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  /*transform: translate(-40%, -50%);*/
+}
+.item {
+  box-shadow: 1px 5px 15px #CCC;
+  width: 15em;
+  height: auto;
+  border-radius: 3px;
+  padding: 2em;
+  margin: 1em;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  align-items: center;
+}
+.item.blue{
+  background: linear-gradient(-45deg, #92DCE5 50%, rgba(255, 255, 255, 0.5) 50%);
+}
+
+.item.pink {
+  background: linear-gradient(-45deg, #FF386D 50%, rgba(255, 255, 255, 0.5) 50%);
+}
+.item .title {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #23211f;
+    margin-bottom: 5px;
+}
+
+.item .desc {
+    font-size: 17px;
+    opacity: .8;
+    margin-bottom: 10px;
+}
+.item img {
+  height: 300px;
+  text-align: center;
+}
+
+.cta {
+    padding: 20px 20px 5px;
+    text-align: center;
+}
+.cta::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.price {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 2px;
+  transition: color .3s ease-in-out;
+  margin-top: 4px;
+}
+.btn {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #FFF;
+    border-radius: 3px;
+    padding: 1em 3em;
+    margin: 1em 0 0 0;
+    background: none;
+    cursor: pointer;
+    -webkit-transition: background ease-in .25s;
+    transition: background ease-in .25s;
+}
+.btn:hover {
+  background: white;
+    color: #2B2D42;
+}
